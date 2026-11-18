@@ -1,0 +1,4 @@
+.env
+bookings.csv
+*.log
+__pycache__/

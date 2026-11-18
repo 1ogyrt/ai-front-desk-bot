@@ -1,0 +1,17 @@
+{
+  "name": "Brightside Dental (demo)",
+  "kind": "family dental clinic in Austin, Texas",
+  "address": "1200 S Lamar Blvd, Austin, TX (demo address)",
+  "hours": "Mon-Fri 8:00 AM - 6:00 PM, Sat 9:00 AM - 2:00 PM, closed Sunday",
+  "greeting": "Hi! This is Brightside Dental. I can answer questions about our services and prices and book you an appointment. How can I help?",
+  "extra": "New patient exam with X-rays is free when treatment starts the same day. We accept Delta Dental, Cigna, Aetna and MetLife PPO plans; no insurance is fine too. Payment plans via CareCredit. Pediatric dentist on Tuesdays and Saturdays. Free parking behind the building. Same-day emergency visits when possible: call (512) 555-0187.",
+  "services": [
+    {"name": "New patient exam and X-rays", "price": "$95"},
+    {"name": "Teeth cleaning", "price": "$120"},
+    {"name": "Tooth-colored filling", "price": "from $180"},
+    {"name": "Tooth extraction", "price": "from $150"},
+    {"name": "In-office teeth whitening", "price": "$399"},
+    {"name": "Dental implant with crown", "price": "from $3,900"},
+    {"name": "Invisalign", "price": "from $3,500, exact price after consultation"}
+  ]
+}
