@@ -112,7 +112,7 @@ class Bot:
         del hist[:-MAX_HISTORY]
         try:
             answer = self.ask_llm(chat_id)
-        except (urllib.error.URLError, KeyError, TimeoutError, ValueError) as e:
+        except (OSError, KeyError, ValueError) as e:
             print("LLM error:", e, getattr(e, "read", lambda: b"")()[:300])
             return "One moment, I'm checking with the office manager. Please write again in a minute."
         hist.append({"role": "assistant", "content": answer})
@@ -133,7 +133,7 @@ class Bot:
         while True:
             try:
                 updates = post_json(self.tg + "getUpdates", {"offset": offset, "timeout": 25, "allowed_updates": ["message"]}, timeout=40)
-            except (urllib.error.URLError, TimeoutError, ValueError) as e:
+            except (OSError, ValueError) as e:  # OSError covers URLError, timeouts, connection resets
                 print("Telegram error:", e)
                 time.sleep(5)
                 continue
